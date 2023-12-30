@@ -1,3 +1,6 @@
+/**
+ * Зоопарк
+ */
 class ZooAnimal extends Animal {
     private int id = 0;
 
