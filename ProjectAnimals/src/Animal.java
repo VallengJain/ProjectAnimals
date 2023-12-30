@@ -1,8 +1,8 @@
 public abstract class Animal {
-    String name;
-    String type;
-    int age;
-    static int counter;
+    private String name;
+    private String type;
+    private int age;
+    private static int counter;
 
     public Animal(String name, String type, int age) {
         this.setName(name);
@@ -41,11 +41,11 @@ public abstract class Animal {
         return this.age;
     }
 
-    void displayInfo() {
+    public void displayInfo() {
         System.out.printf("\nName: %s \tType: %s \tAge: %d\n", this.name, this.type, this.age);
     }
 
-    void displayCount() {
+    public static void displayCount() {
         System.out.printf("\nQuantity of Animals: %s.\n", counter);
     }
 }

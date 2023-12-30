@@ -1,6 +1,3 @@
-/**
- * Зоопарк
- */
 class ZooAnimal extends Animal {
     private int id = 0;
 
@@ -13,7 +10,11 @@ class ZooAnimal extends Animal {
         this.id = id;
     }
 
-    void displayID() {
-        System.out.printf("ID for %s is %s.\n", this.name, this.id);
+    public int getID() {
+        return id;
+    }
+
+    public void displayID() {
+        System.out.printf("ID for %s is %s.\n", this.getName(), this.id);
     }
 }

@@ -3,17 +3,24 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        WildAnimal dog = new WildAnimal("Hugo", "Labrador", 5);
-        dog.displayInfo();
+        Object dog = new WildAnimal("Hugo", "Labrador", 5, "Fir forest");
+        if(dog instanceof ZooAnimal) {
+            ZooAnimal ZooAnimalDog = (ZooAnimal) dog;
+            ZooAnimalDog.displayInfo();
+        } else {
+            System.out.println("Conversion is invalid.");
+        }
 
-        WildAnimal parrot = new WildAnimal("Kluvik", "Wavy", 200);
+        WildAnimal parrot = new WildAnimal("Kluvik", "Wavy", 200, "Tropical forest");
         parrot.displayInfo();
 
-        WildAnimal cat = new WildAnimal("Barsik", "Asian", 8);
+        WildAnimal cat = new WildAnimal("Barsik", "Asian", 8, "Tropical forest");
         cat.displayInfo();
 
-        WildAnimal monkey = new WildAnimal("Goga", "Orangutan", 19);
+        WildAnimal monkey = new WildAnimal("Goga", "Orangutan", 19, "South forest");
         monkey.displayInfo();
+
+
 
         ZooAnimal bear = new ZooAnimal("Riddik", "Brown", 15, 1);
         bear.displayInfo();
@@ -23,10 +30,8 @@ public class Main {
         dragon.displayInfo();
         dragon.displayID();
 
-        dragon.displayCount();
 
-        System.out.println();
-        Animal.counter++;
-        System.out.println(Animal.counter);
+
+        Animal.displayCount();
     }
 }
