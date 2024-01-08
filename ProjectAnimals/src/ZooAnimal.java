@@ -14,7 +14,8 @@ class ZooAnimal extends Animal {
         return id;
     }
 
-    public void displayID() {
-        System.out.printf("ID for %s is %s.\n", this.getName(), this.id);
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.printf(", \tID in zoo: %d.\n", this.id);
     }
 }

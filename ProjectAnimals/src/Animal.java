@@ -42,7 +42,7 @@ public abstract class Animal {
     }
 
     public void displayInfo() {
-        System.out.printf("\nName: %s \tType: %s \tAge: %d\n", this.name, this.type, this.age);
+        System.out.printf("\nName: %s \tType: %s \tAge: %d", this.name, this.type, this.age);
     }
 
     public static void displayCount() {

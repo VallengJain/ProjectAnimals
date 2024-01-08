@@ -14,4 +14,9 @@ public class WildAnimal extends Animal{
     public String getHabitat() {
         return habitat;
     }
+
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.printf(", \tHabitat: %s\n", this.habitat);
+    }
 }
